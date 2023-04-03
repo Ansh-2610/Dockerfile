@@ -2,7 +2,7 @@
 FROM nginx:latest
 
 # Copy custom Nginx configuration file
-COPY nginx.conf /etc/nginx/nginx.conf
+COPY ./nginx.conf /etc/nginx/nginx.conf
 
 # Copy static content into the container
 COPY index.html /usr/share/nginx/html
